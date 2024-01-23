@@ -33,6 +33,10 @@ a {color: white;
  
 }
 
+
+a:hover {color:gray}
+
+
 a.right {margin-right:  10px;}
 
 a.left{margin-left:  10px;}
