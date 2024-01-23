@@ -1,3 +1,6 @@
+
+/* Classi principali */
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,54 +11,35 @@
 }
 
 
-header{
-  background-color: #ff6900;
-  display: flex;
-  color: #e9e1db;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  z-index: 2;
+img{max-width: 100%;}
 
-
-}
 
 .flexing{
   display: flex;
 }
 
 
-#spc-between{justify-content: space-between;}
-
 
 .container{
+
   display: flex;
   width: 80%;
   margin: auto;
-  align-items: center;
-
+  
 }
-
 
 a {color: white; 
   font-size: medium;
  
 }
 
-
-
-
 a.right {margin-right:  10px;}
 
 a.left{margin-left:  10px;}
 
-  
 
 
-
-
+/* ID */
 
 #resize-logo{
   height: 10%;
@@ -64,76 +48,65 @@ a.left{margin-left:  10px;}
 }
 
 
+#discount-right{left: 13%;}
+
+
+#spc-between{justify-content: space-between;}
+
+
+/* Classi header */
+
+header{
+  background-color: #ff6900;
+  display: flex;
+  color: #e9e1db;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 2;
+
+
+}
+
+
+
+header .container{
+ 
+  align-items: center;
+
+}
+
+
+/* Classi main */
+
+
 main{
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 30px;
 }
 
 
-img{max-width: 100%; }
-
-
-div.figure p {
-  margin-bottom: 40px;
-}
-
-
-
-.debug{background-color: blueviolet;}
-
-
-
-
-
-
-.container-main{
-  display: flex;
+main.container{
+  
   background-position: center;
   justify-content: center;
-  gap: 0.49%;
+  gap: 1%;
   flex-wrap: wrap;
-  max-width: 80%;
-  margin:auto
+ 
   
 
 }
 
-
-#discount-right{left: 13%;}
-
-
-span > strong.redtext{color: red;}
-
-span.crossed-out{
-  text-decoration: line-through;
-  margin-left: 3px;
-}
 
 
 .figure{
  
-  width: 558px;
+  width: 32%;
   
   cursor: pointer;
 }
-
-
-.model{position: relative;}
-
-
-.hovered{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-}
-
-
-.model:hover .hovered{
-  display: block;
-}
-
 
 
 
@@ -151,7 +124,7 @@ span.crossed-out{
 .discount.sostenibile{background-color: green;}
 
 
-.figure .heart {
+.figure .model .heart {
   position: absolute;
   padding: 10px 20px;
   background-color: white;
@@ -161,13 +134,37 @@ span.crossed-out{
 
 }
 
+.heart:hover {color: red;} 
+
+.model{position: relative;}
+
+.model:hover .hovered{
+  display: block;
+}
 
 
+span > strong.redtext{color: red;}
+
+span.crossed-out{
+  text-decoration: line-through;
+  margin-left: 3px;
+}
+  
+
+div.figure p {
+  margin-bottom: 40px;
+}
 
 
-.heart:hover {
-	color: red;
-} 
+.hovered{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+/* Classi Footer */
 
 
 footer{
